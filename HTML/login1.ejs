@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login to your account</title>
+  <style>
+  body{
+    margin: 0;
+    background-color: #000;
+  }
+  #wrapper{
+    width: 980px;
+    margin: 0 auto;
+    background: #fff;
+  }
+  #header nav{
+    background-color: #000;
+    padding: 10px;
+    font-family: Herculanum;
+  }
+  #header ul{
+    list-style-type: none;
+    text-align: right;
+  }
+  #header li{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #header a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+  }
+  #header a.gradient{
+    background: #8f746c;
+    border-radius: 8px;
+    transition: 1.5s;
+  }
+  #header a.gradient:hover{
+    background: #000;
+    transform: rotate(360deg);
+  }
+  #flex-container{
+    display: flex;
+    justify-content: space-between;
+    background: #8f746c;
+  }
+  #flex-container > div{
+    margin: 20px;
+  }
+  .form p{
+    text-align: center;
+  }
+  .form img{
+    width: 35px;
+    position: relative;
+    left: 40%;
+  }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <nav>
+        <ul>
+          <li><a href="/home" class="gradient">Home</a></li>
+          <li><a href="/register" class="gradient">Register</a></li>
+          <li><a href="#" class='gradient'>Pricing</a></li>
+          <li><a href="#" class="gradient">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="flex-container">
+      <div class="form" style="background-color: red;padding:10px">
+        <h2>Login Here</h2>
+        <form method="POST" action="/database/login">
+          <ul>
+            <li><label for="email">Email-Id</label></li>
+            <input type="text" name="email" required><br>
+            <li><label for="password">Password</label></li>
+            <input type="password" name="password" required><br>
+            <input type="submit" value="Login">
+          </ul>
+        </form>
+        <p><b>OR</b></p>
+        <h3>Login Using...</h3>
+        <a href="/auth/google"><img src= 'http://www.pixempire.com/images/preview/google-search-icon.jpg'></a>
+      </div>
+      <div class="para">
+        <h2><marquee>Forget Waiting , Book your parking Online..!!</marquee></h2>
+        <p style="font-size: 20px;font-family: Verdana;">We at TechTracKers, are committed towards building a techno-friendly environment where technology will fulfill our needs . Following this , we have come up with a online parking Reservation System by virtue of which you can reserve your parking space online. So , book your parking in advance and experience a hassle free travel.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
